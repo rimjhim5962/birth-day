@@ -23,9 +23,16 @@ export const loadExperienceData = (): ExperienceData => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       const parsed = JSON.parse(saved);
+      const savedPhotos = Array.isArray(parsed.photos) ? parsed.photos : [];
+      const hasCustomPhotos = savedPhotos.some(
+        (photo: { id?: string }) => !String(photo.id || '').startsWith('photo_default_'),
+      );
       return {
         ...DEFAULT_EXPERIENCE_DATA,
         ...parsed,
+        photos: hasCustomPhotos ? savedPhotos : DEFAULT_EXPERIENCE_DATA.photos,
+        music1: { ...DEFAULT_EXPERIENCE_DATA.music1, ...parsed.music1 },
+        music2: { ...DEFAULT_EXPERIENCE_DATA.music2, ...parsed.music2 },
       };
     }
   } catch (e) {

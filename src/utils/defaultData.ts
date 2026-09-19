@@ -1,12 +1,5 @@
 import type { ExperienceData } from '../types';
 
-// High quality embedded romantic polaroid visuals for default state
-const DEFAULT_PHOTO_1 = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450"><rect width="600" height="450" fill="%23FFE2E2"/><circle cx="300" cy="200" r="120" fill="%23F5CBCB" opacity="0.6"/><path d="M300 130 C270 90, 210 110, 210 160 C210 220, 300 270, 300 290 C300 270, 390 220, 390 160 C390 110, 330 90, 300 130 Z" fill="%23C5B3D3"/><text x="300" y="360" font-family="serif" font-size="28" fill="%234A353B" text-anchor="middle">Precious Moments ❤️</text></svg>`;
-
-const DEFAULT_PHOTO_2 = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450"><rect width="600" height="450" fill="%23FBEFEF"/><circle cx="200" cy="220" r="90" fill="%23FFE2E2"/><circle cx="400" cy="180" r="110" fill="%23C5B3D3" opacity="0.5"/><text x="300" y="240" font-family="sans-serif" font-size="32" font-weight="bold" fill="%234A353B" text-anchor="middle">Vedant &amp; Me ✨</text><text x="300" y="360" font-family="serif" font-size="24" fill="%236E525A" text-anchor="middle">Laughs &amp; Endless Memories</text></svg>`;
-
-const DEFAULT_PHOTO_3 = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450"><rect width="600" height="450" fill="%23FFE2E2"/><path d="M300 80 A120 120 0 1 0 420 200 A90 90 0 1 1 300 80 Z" fill="%23C5B3D3"/><text x="300" y="370" font-family="serif" font-size="26" fill="%234A353B" text-anchor="middle">Under The Stars 🌙</text></svg>`;
-
 export const DEFAULT_EXPERIENCE_DATA: ExperienceData = {
   recipientName: "Vedant Shukla",
   nickname: "Lottychoco Pie",
@@ -109,24 +102,60 @@ Happy Birthday, Lottychoco Pie. 🎂🍫🥧`,
   creatorSignature: "Made specially for Vedant Shukla ❤️",
   photos: [
     {
-      id: "photo_default_1",
-      url: DEFAULT_PHOTO_1,
-      caption: "Precious Moments ❤️",
+      id: "memory-01",
+      url: "/media/memory-01.png",
+      caption: "Our precious memory ❤️",
     },
     {
-      id: "photo_default_2",
-      url: DEFAULT_PHOTO_2,
-      caption: "Vedant & Me ✨",
+      id: "memory-02",
+      url: "/media/memory-02.jpg",
+      caption: "Together ✨",
     },
     {
-      id: "photo_default_3",
-      url: DEFAULT_PHOTO_3,
-      caption: "Under The Stars 🌙",
-    }
+      id: "memory-03",
+      url: "/media/memory-03.jpg",
+      caption: "A beautiful day",
+    },
+    {
+      id: "memory-04",
+      url: "/media/memory-04.jpg",
+      caption: "Just us ❤️",
+    },
+    {
+      id: "memory-05",
+      url: "/media/memory-05.jpg",
+      caption: "Sweet moments",
+    },
+    {
+      id: "memory-06",
+      url: "/media/memory-06.jpg",
+      caption: "Always together",
+    },
+    {
+      id: "memory-07",
+      url: "/media/memory-07.jpg",
+      caption: "Our little world",
+    },
+    {
+      id: "memory-08",
+      url: "/media/memory-08.jpg",
+      caption: "Making memories",
+    },
+    {
+      id: "memory-09",
+      url: "/media/memory-09.jpg",
+      caption: "Forever us",
+    },
+    {
+      id: "memory-10",
+      url: "/media/memory-10.jpg",
+      caption: "Under the stars 🌙",
+    },
   ],
   music1: {
     id: "music1",
-    name: "Soft Romantic Prelude.mp3",
+    name: "Vaaroon Forever.mp3",
+    url: "/media/vaaroon-forever.mp3",
     startTime: 0,
     endTime: 180,
     duration: 180,
@@ -134,7 +163,8 @@ Happy Birthday, Lottychoco Pie. 🎂🍫🥧`,
   },
   music2: {
     id: "music2",
-    name: "Cinematic Birthday Melody.mp3",
+    name: "Dil Tu Jaan Tu.mp3",
+    url: "/media/dil-tu-jaan-tu.mp3",
     startTime: 0,
     endTime: 180,
     duration: 180,
