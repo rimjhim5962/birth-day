@@ -1,4 +1,16 @@
 import type { ExperienceData } from '../types';
+import photo01 from '../../pic/file_000000004d0861fd9936c81e7fc14043.png';
+import photo02 from '../../pic/IMG-20250131-WA0003.jpg';
+import photo03 from '../../pic/IMG-20250208-WA0002.jpg';
+import photo04 from '../../pic/IMG-20250208-WA0006.jpg';
+import photo05 from '../../pic/IMG-20250208-WA0008.jpg';
+import photo06 from '../../pic/IMG-20250516-WA0001.jpg';
+import photo07 from '../../pic/IMG-20250516-WA0002.jpg';
+import photo08 from '../../pic/IMG-20250516-WA0005.jpg';
+import photo09 from '../../pic/Snapchat-1122101428.jpg';
+import photo10 from '../../pic/Snapchat-40878349.jpg';
+import music1Url from '../../song/Vaaroon Forever Mirzapur 320 Kbps.mp3';
+import music2Url from '../../song/dil-tu-jaan-tu-gurnazar-320-kbps_G1miEwC4.mp3';
 
 export const DEFAULT_EXPERIENCE_DATA: ExperienceData = {
   recipientName: "Vedant Shukla",
@@ -102,60 +114,60 @@ Happy Birthday, Lottychoco Pie. 🎂🍫🥧`,
   creatorSignature: "Made specially for Vedant Shukla ❤️",
   photos: [
     {
-      id: "memory-01",
-      url: "/media/memory-01.png",
+      id: "photo_default_01",
+      url: photo01,
       caption: "Our precious memory ❤️",
     },
     {
-      id: "memory-02",
-      url: "/media/memory-02.jpg",
+      id: "photo_default_02",
+      url: photo02,
       caption: "Together ✨",
     },
     {
-      id: "memory-03",
-      url: "/media/memory-03.jpg",
+      id: "photo_default_03",
+      url: photo03,
       caption: "A beautiful day",
     },
     {
-      id: "memory-04",
-      url: "/media/memory-04.jpg",
+      id: "photo_default_04",
+      url: photo04,
       caption: "Just us ❤️",
     },
     {
-      id: "memory-05",
-      url: "/media/memory-05.jpg",
+      id: "photo_default_05",
+      url: photo05,
       caption: "Sweet moments",
     },
     {
-      id: "memory-06",
-      url: "/media/memory-06.jpg",
+      id: "photo_default_06",
+      url: photo06,
       caption: "Always together",
     },
     {
-      id: "memory-07",
-      url: "/media/memory-07.jpg",
+      id: "photo_default_07",
+      url: photo07,
       caption: "Our little world",
     },
     {
-      id: "memory-08",
-      url: "/media/memory-08.jpg",
+      id: "photo_default_08",
+      url: photo08,
       caption: "Making memories",
     },
     {
-      id: "memory-09",
-      url: "/media/memory-09.jpg",
+      id: "photo_default_09",
+      url: photo09,
       caption: "Forever us",
     },
     {
-      id: "memory-10",
-      url: "/media/memory-10.jpg",
+      id: "photo_default_10",
+      url: photo10,
       caption: "Under the stars 🌙",
     },
   ],
   music1: {
     id: "music1",
-    name: "Vaaroon Forever.mp3",
-    url: "/media/vaaroon-forever.mp3",
+    name: "Vaaroon Forever Mirzapur 320 Kbps.mp3",
+    url: music1Url,
     startTime: 0,
     endTime: 180,
     duration: 180,
@@ -163,8 +175,8 @@ Happy Birthday, Lottychoco Pie. 🎂🍫🥧`,
   },
   music2: {
     id: "music2",
-    name: "Dil Tu Jaan Tu.mp3",
-    url: "/media/dil-tu-jaan-tu.mp3",
+    name: "dil-tu-jaan-tu-gurnazar-320-kbps.mp3",
+    url: music2Url,
     startTime: 0,
     endTime: 180,
     duration: 180,

@@ -24,8 +24,9 @@ export const loadExperienceData = (): ExperienceData => {
     if (saved) {
       const parsed = JSON.parse(saved);
       const savedPhotos = Array.isArray(parsed.photos) ? parsed.photos : [];
-      const hasCustomPhotos = savedPhotos.some(
-        (photo: { id?: string }) => !String(photo.id || '').startsWith('photo_default_'),
+      const hasCustomPhotos = savedPhotos.some((photo: { id?: string }) =>
+        String(photo.id || '').startsWith('photo_') &&
+        !String(photo.id || '').startsWith('photo_default_'),
       );
       return {
         ...DEFAULT_EXPERIENCE_DATA,
